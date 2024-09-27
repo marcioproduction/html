@@ -1,0 +1,50 @@
+/*
+grip-template (versão reduziada)
+-grid-template-columns
+-grid-template-row
+-grid-template-areas
+*/
+
+#app{
+    display: grid;
+    /*grid-template-columns: 5fr 2fr 3fr; para definir cada fração*/
+    grid-template-columns: repeat(6, 1fr); /*repetição e frações*/
+    grid-template-rows: repeat(8, 1fr); /*repetição e frações*/
+}
+#app div:nth-child(1){
+    background-color: lightblue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#app div:nth-child(2){
+    background-color: lightyellow;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+#header, nav{
+    background:gray;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+footer{
+    background:red;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+#main{
+    background: cyan;
+    /*forma reduziada*/
+    grid-column: 1/6;
+    grid-row: 3/8;
+}
+#aside{
+    background: rgb(255, 208, 0);
+    grid-column: 6/7;
+    grid-row: 3/8;    
+}

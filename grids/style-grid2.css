@@ -1,0 +1,38 @@
+/*
+grip-template (versão reduziada)
+-grid-template-columns
+-grid-template-row
+-grid-template-areas
+*/
+
+#app{
+    display: grid;
+    grid-template-areas: 
+    "A A A"
+    "E E E"
+    "B B C"
+    "D D D";
+    gap: 5px;
+    /*row-gap: 5px;*/
+    /*column-gap: 20px;*/
+}
+#header{
+    background: red;
+    grid-area: A;
+}
+#nav{
+    background: pink;
+    grid-area: E;
+}
+#main{
+    background: orange;
+    grid-area: B;
+}
+#aside{
+    background: green;
+    grid-area: C;
+}
+#footer{
+    background: yellow;
+    grid-area: D;
+}
