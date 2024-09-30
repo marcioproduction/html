@@ -4,8 +4,6 @@ body{
 *{
     font-family: "Open Sans", sans-serif;
     color:#1B1B1B;
-    padding: 0;
-    margin: 0;
 }
 .container{
     width: 1120px;
@@ -14,13 +12,19 @@ body{
 .img-resp{
     max-width: 100%;
     border-radius: 28px;
-    margin: 30px;
+    box-sizing: 0;
+    margin-top: 20px;
 }
 article{
     margin-bottom: 50px;
 }
 p{
     font-size: 16px;
+}
+.subtitle{
+   font-size: 16px;
+   font-style: italic;
+
 }
 h1{
     font-size:36px ;
@@ -33,6 +37,7 @@ h3{
 }
 h1, h2, h3{
     padding-top: 0;
+    line-height: 0;
 }
 .headline{
     color: #E1624F;
